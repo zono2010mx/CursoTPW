@@ -192,7 +192,7 @@
                 </td>
             </tr>
             <tr>
-                <td>li y ul</td>
+                <td>ul y li</td>
                 <td>
                     <ul>
                         <li>punto uno</li>
@@ -228,11 +228,177 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
+                <td>ol y li</td>
                 <td>
+                    <ol>
+                        <li>punto uno</li>
+                        <li>punto dos</li>
+                        <li>punto tres</li>
+                    </ol>
                 </td>
             </tr>
-   
+            <tr>
+                <td>optgroup, option y select</td>
+                <td>
+                    <label for="dino-select">Choose a dinosaur:</label>
+                    <select id="dino-select">
+                    <optgroup label="Theropods">
+                        <option>Tyrannosaurus</option>
+                        <option>Velociraptor</option>
+                        <option>Deinonychus</option>
+                    </optgroup>
+                    <optgroup label="Sauropods">
+                        <option>Diplodocus</option>
+                        <option>Saltasaurus</option>
+                        <option>Apatosaurus</option>
+                    </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>output</td>
+                <td>
+                    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+                        <input type="range" id="b" name="b" value="50" /> +
+                        <input type="number" id="a" name="a" value="10" /> =
+                        <output name="result" for="a b">60</output>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>
+                    <p>Geckos are a group of usually small, usually nocturnal 
+                    lizards. They are found on every continent except Antarctica.</p>
+                    <p>Some species live in houses where they hunt insects attracted 
+                    by artificial light.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>pre</td>
+                <td>
+                    <pre>
+                        L          TE
+                          A       A
+                            C    V
+                             R A
+                             DOU
+                             LOU
+                            REUSE
+                            QUE TU
+                            PORTES
+                          ET QUI T'
+                          ORNE O CI
+                           VILISÉ
+                          OTE-  TU VEUX
+                           LA    BIEN
+                          SI      RESPI
+                                  RER       - Apollinaire
+                    </pre>
+                </td>
+            </tr>
+            <tr>
+                <td>Progress</td>
+                <td>
+                    <label for="file">File progress:</label>
+                    <progress id="file" max="100" value="70"> 70% </progress>
+                </td>
+            </tr>
+            <tr>
+                <td>q</td>
+                <td>
+                    <p>When Dave asks HAL to open the pod bay 
+                    door, HAL answers: <q>I'm sorry, Dave. I'm 
+                    afraid I can't do that.</q></p>
+                </td>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>
+                    <p><s>There will be a few tickets available at the box 
+                    office tonight.</s></p>
+                    <p>SOLD OUT!</p>
+                </td>
+            </tr>
+            <tr>
+                <td>samp</td>
+                <td>
+                    <p>I was trying to boot my computer, but I got this hilarious message:</p>
+                    <p><samp>Keyboard not found <br>Press F1 to continue</samp></p>
+                </td>
+            </tr>
+            <tr>
+                <td>small</td>
+                <td>
+                    <p>MDN Web Docs is a learning platform for Web technologies and 
+                    the software that powers the Web.</p>
+                    <hr>
+                    <p><small>The content is licensed under a Creative Commons 
+                    Attribution-ShareAlike 2.5 Generic License.</small></p>
+                </td>
+            </tr>
+            <tr>
+                <td>strong</td>
+                <td>
+                    <p>... the most important rule, the rule you can never 
+                    forget, no matter how much he cries, no matter how much 
+                    he begs: <strong>never feed him after midnight</strong>.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Sub</td>
+                <td>
+                    <p>Almost every developer's favorite molecule is
+                    C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Sup</td>
+                <td>
+                    <p>The <em>Pythagorean theorem</em> is often expressed as the following equation:</p>
+                    <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+                </td>
+            </tr>
+            <tr>
+                <td>textarea</td>
+                <td>
+                    <label for="story">Tell us your story:</label>
+                    <textarea id="story" name="story" rows="5" cols="33">
+                        It was a dark and stormy night...
+                    </textarea>   
+                </td>
+            </tr>
+            <tr>
+                <td>u</td>
+                <td>
+                    <p>You could use this element to 
+                    highlight <u>speling</u> mistakes, 
+                    so the writer can <u>corect</u> them.</p>  
+                </td>
+            </tr>
+            <tr>
+                <td>var</td>
+                <td> 
+                    <p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, 
+                    where <var>l</var> represents the length, <var>w</var> the width and 
+                    <var>h</var> the height of the box.</p> 
+                </td>
+            </tr>
+            <tr>
+                <td>video</td>
+                <td> 
+                    <video controls width="250">
+                        <source src="/media/cc0-videos/flower.webm" type="video/webm">
+                        <source src="/media/cc0-videos/flower.mp4" type="video/mp4">
+                        Download the
+                        <a href="/media/cc0-videos/flower.webm">WEBM</a>
+                        or
+                        <a href="/media/cc0-videos/flower.mp4">MP4</a>
+                        video.
+                    </video>
+                </td>
+            </tr>
+
         </table>
 
     </section>
