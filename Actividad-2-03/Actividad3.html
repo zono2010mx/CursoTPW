@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Actividad 3</title>
+    <link rel="stylesheet" href="..\Actividad-2-04\estilosTabla.css">
 </head>
 
 <body>
+    <div id="general">
     <header>
         <div>
+            <img src="..\Imagenes\fotoPerfil.png" alt="Foto de perfil del estudiante" 
+            width="95" height="100" style="float:left">
             <img src="..\Imagenes\gatoVaquero.png" alt="Foto de perfil del estudiante" 
-            width="100" height="100" style="float:left">
+            width="95" height="100" style="float:right">
             <h1>Alumno: Pérez Rodríguez Segio Armando</h1>
             <h2>Contenido: Bienvenida a la pagina del curso de programacion web</h2>
         </div>
     </header>
 
+    <div id="unidades">
     <h3>Unidad 2</h3>
 
-    <div>
-        <a href="..\Actividad-2-01\index.html">Actividad 1</a>
-    </div>
-    <a href="..\Actividad-2-02\Actividad2.html">Actividad 2</a>
+    <a class="actividad" href="..\Actividad-2-01\index.html">Actividad 1</a>
     <br>
-    <a>Actividad 3</a>
+    <a class="actividad" href="..\Actividad-2-02\Actividad2.html">Actividad 2</a>
+    <br>
+    <a class="actividad">Actividad 3</a>
 
     <h3>Unidad 3</h3>
 
     <h3>Unidad 4</h3>
+    </div>
 
+    <div id="seccion">
     <section>
         <h1><FONT FACE="arial black">Tabla de etiquetas HTML</FONT></h1>
         <time datetime="20-10-2022">Publicado 20-10-2022</time>
         <p>Sergio Armando Pérez Rodríguez<br>
         Ingeniero en sistemas computacionales</p>
 
-        <table border="1px solid black">
+        <table>
             <caption>Etiquetas HTML</caption>
             <tr>
-                <td><font face="arial black">Etiqueta</font></td>
-                <td><font face="arial black">Ejemplo</font></td>
+                <td class="tituloColumna">Etiqueta</font></td>
+                <td class="tituloColumna">Ejemplo</font></td>
             </tr>
             <tr>
                 <td>HTML Anchor</td>
@@ -402,7 +408,9 @@
         </table>
 
     </section>
+    </div>
 
+    </div>
     <footer>        
         <p> Copyright &copy; 2022, Ctrl zono2010mx</p>
     </footer>
