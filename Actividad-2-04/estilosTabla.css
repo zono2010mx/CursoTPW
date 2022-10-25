@@ -21,7 +21,7 @@ header{
     margin-top: 20px;
     float: left;
     background: rgb(50, 20, 80, 0.4);
-    width: 130px;
+    width: 150px;
     border: 1px solid #de004e;
     padding: 5px;
 }
@@ -45,7 +45,7 @@ table{
 td, th{
     width: 25%;
     text-align: left;
-    border: 3px solid #de004e;;
+    border: 3px solid #de004e;
 }
 
 footer{

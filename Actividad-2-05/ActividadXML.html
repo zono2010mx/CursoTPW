@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 5px solid #de004e;
+        }
+        td{
+            width: 25%;
+            text-align: left;
+            border: 3px solid #de004e;
+            padding: 5px;
+            font-weight: bold;
+            color: #fe75fe;
+        }
+        th{
+            color: #f5b8f5;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="..\Actividad-2-04\estilos.css">
+</head>
+
+<body>
+    <div id="general">
+    <header>
+        <div>
+            <img src="..\Imagenes\fotoPerfil.png" alt="Foto de perfil del estudiante" 
+            width="95" height="100" style="float:left">
+            <img src="..\Imagenes\gatoVaquero.png" alt="Foto de perfil del estudiante" 
+            width="95" height="100" style="float:right">
+            <h1>Alumno: Pérez Rodríguez Segio Armando</h1>
+            <h2>Contenido: Bienvenida a la pagina del curso de programacion web</h2
+        </div>
+    </header>
+
+    <div id="unidades">
+        <h3>Unidad 2</h3>
+
+        <a class="actividad" href="..\Actividad-2-01\index.html">Actividad 1</a>
+        <br>
+        <a class="actividad" href="..\Actividad-2-02\Actividad2.html">Actividad 2</a>
+        <br>
+        <a class="actividad" href="..\Actividad-2-03\Actividad3.html">Actividad 3</a>
+        <br>
+        <a class="actividad">Actividad XML</a>
+    
+        <h3>Unidad 3</h3>
+    
+        <h3>Unidad 4</h3>    
+    </div>
+
+    <div id="seccion">
+        <section>
+
+        <h1><FONT FACE="arial black">Archivo XML</FONT></h1>
+        <time datetime="24-17-2022">Publicado 24-10-2022</time>
+        <p>Sergio Armando Pérez Rodríguez<br>
+        Ingeniero en sistemas computacionales</p>
+
+        <div id="texto">
+            <h2>Coleccion de CDs</h2>
+            <button id="CargarCatalogo">Carga catalogo</button>
+        </div>
+        <table id="demo"></table>
+
+        <script>
+            const element = document.getElementById("CargarCatalogo");
+            element.addEventListener("click", loadDoc);
+
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {myFunction(this);}
+                xhttp.open("GET", "cd_catalog.xml");
+                xhttp.send();
+            }
+
+        function myFunction(xml) {
+            const xmlDoc = xml.responseXML;
+            const x = xmlDoc.getElementsByTagName("CD");
+            let table="<tr><th>Artist</th><th>Title</th><th>Country</th><th>Company</th></tr>";
+            for (let i = 0; i <x.length; i++) {
+                table += "<tr><td>" +
+                x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+             document.getElementById("demo").innerHTML = table;
+        }
+
+        </script>
+
+        </section>
+    </div>
+
+    </div>
+    <footer>        
+        <p> Copyright &copy; 2022, Ctrl zono2010mx</p>
+    </footer>
+ 
+</body>
+</html>
