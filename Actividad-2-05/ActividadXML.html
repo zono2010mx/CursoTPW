@@ -25,7 +25,7 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     </style>
-    <link rel="stylesheet" href="..\Actividad-2-04\estilos.css">
+    <link rel="stylesheet" href="..\Actividad-2-04\estilosA5.css">
 </head>
 
 <body>
@@ -50,7 +50,9 @@
         <br>
         <a class="actividad" href="..\Actividad-2-03\Actividad3.html">Actividad 3</a>
         <br>
-        <a class="actividad">Actividad XML</a>
+        <a class="actividad" href="..\Actividad-2-04\Actividad4.html">Actividad 4</a>
+        <br>
+        <a class="actividad">Actividad 5</a>
     
         <h3>Unidad 3</h3>
     
@@ -76,29 +78,29 @@
             element.addEventListener("click", loadDoc);
 
             function loadDoc() {
-                const xhttp = new XMLHttpRequest();
+                xhttp = new XMLHttpRequest();
                 xhttp.onload = function() {myFunction(this);}
                 xhttp.open("GET", "cd_catalog.xml");
-                xhttp.send();
+                xhttp.send();                                   
             }
 
-        function myFunction(xml) {
-            const xmlDoc = xml.responseXML;
-            const x = xmlDoc.getElementsByTagName("CD");
-            let table="<tr><th>Artist</th><th>Title</th><th>Country</th><th>Company</th></tr>";
-            for (let i = 0; i <x.length; i++) {
-                table += "<tr><td>" +
-                x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +
-                "</td></tr>";
+            function myFunction(xml) {
+                const xmlDoc = xml.responseXML;
+                const x = xmlDoc.getElementsByTagName("CD");
+                let table="<tr><th>Artist</th><th>Title</th><th>Country</th><th>Company</th></tr>";
+                for (let i = 0; i <x.length; i++) {
+                    table += "<tr><td>" +
+                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue +
+                    "</td><td>" +
+                    x[i].getElementsByTagName("COMPANY")[0].childNodes[0].nodeValue +
+                    "</td></tr>";
+                }
+                document.getElementById("demo").innerHTML = table;
             }
-             document.getElementById("demo").innerHTML = table;
-        }
 
         </script>
 
