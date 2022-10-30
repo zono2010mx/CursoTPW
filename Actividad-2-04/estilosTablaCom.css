@@ -7,7 +7,7 @@ body{
     margin: 0;
     margin-top: 20px;
     width: 2000;
-    height: 4800px;
+    height: 5100px;
     background-color: rgb(41, 19, 46, 0.7); 
     border: solid black;
 }
@@ -208,3 +208,98 @@ kbd{
     font-weight: lighter;
 }
 
+#etiquetaA{
+    color:antiquewhite;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter
+}
+
+.lista{
+    color:#3070f0;
+    font-size: 25px;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+mark{
+    color: #2e6de9; 
+}
+
+#fuel{
+    background-color:#f5b8f5;
+    box-shadow: #6f186f;
+}
+
+#dino-select{
+    background-color:aquamarine;
+    font-family: cursive;
+}
+
+#parrafoA{
+    font-family: inherit;
+    font-weight: bolder;
+}
+
+pre{
+    font-family: cursive;
+    font-size: medium;
+}
+
+progress{
+    -webkit-appearance: none;
+}
+::-webkit-progress-bar {
+    background-color: orange;
+}
+
+q{
+    color: darkturquoise;
+    font-family: inherit;
+    font-weight: bolder;
+}
+
+s{
+    color:chartreuse;
+}
+
+samp{
+    color: #ff00a0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+small{
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+strong{
+    color: #ddeb20;
+    font-size: large;
+}
+
+sub{
+    color:forestgreen;
+    font-size:medium;
+}
+
+sup{
+    color:#d6e834;
+    font-size:medium; 
+}
+
+textarea{
+    background:#1fbbb0;
+    border: solid #0016b0
+}
+
+u{
+    color: #f5b8f5;
+    font-family: inherit;
+    font-weight: bolder;
+}
+
+var{
+    color: #ffffff;
+    font-family:fantasy;
+    font-weight: lighter; 
+}
